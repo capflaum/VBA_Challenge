@@ -1,4 +1,4 @@
-Sub VBA_challenge()
+    Sub VBA_challenge()
     
     Dim TickerName As String
     TickerName = 0
@@ -46,13 +46,11 @@ Sub VBA_challenge()
     'Set up next Loop
         Row = Row + 1
         StartStockRow = i + 1
-        OpenValue = Cells(i + 1, 3).Value
-        
+        OpenValue = Cells(i + 1, 3).Value  
     
     End If
 
-Next i
-
-End Sub
+    Next i
+    End Sub
 
 
