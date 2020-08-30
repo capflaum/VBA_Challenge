@@ -1,24 +1,24 @@
 # VBA_Challenge
 # VBA Homework #2
 
-Sub VBA_challenge()
-    Dim TickerName As String
-    TickerName = 0
-    Dim Row As Integer
-    Row = 2
+    Sub VBA_challenge()
+      Dim TickerName As String
+      TickerName = 0
+      Dim Row As Integer 
+      Row = 2
     
-   Dim OpenValue As Double
-   Dim CloseValue As Double
-   Dim PercentageChange As Double
-   OpenValue = Cells(2, 3).Value
+      Dim OpenValue As Double
+      Dim CloseValue As Double
+      Dim PercentageChange As Double
+      OpenValue = Cells(2, 3).Value
    
-   Dim StartStockRow As Long
-   StartStockRow = 2
+      Dim StartStockRow As Long
+      StartStockRow = 2
    
-RowCount = Cells(Rows.Count, 1).End(xlUp).Row
-For i = 2 To RowCount
+    RowCount = Cells(Rows.Count, 1).End(xlUp).Row
+    For i = 2 To RowCount
 
-   If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
+     If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
        TickerName = Cells(i, 1).Value
        Range("I" & Row).Value = TickerName
         
@@ -41,10 +41,10 @@ For i = 2 To RowCount
         OpenValue = Cells(i + 1, 3).Value
         
     
-    End If
+        End If
     
-Next i
+     Next i
 
-End Sub
+     End Sub
 
   
